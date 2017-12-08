@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">标题</h1>
+		</header>
+		<header class="mui-bar mui-bar-nav bg-write">
+			<div class="mui-title xm-tit">
+				<a href="#" class="mui-action-back">直投</a>
+				<a href="#" class="bck-db">债券</a>
+			</div>
+		</header>
+		<!--下拉刷新容器-->
+		<div id="refreshContainer" class="mui-scroll-wrapper mui-content">
+			<div class="mui-scroll">
+				<div class="yt-list">
+					<ul class="xm-list">
+						<li>
+							<a href="#">
+								<div class="xm-pic">
+									<img src="img/bxbz.png" />
+								</div>
+								<p>本息保障</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="xm-pic">
+									<img src="img/qtj.png" />
+								</div>
+								<p>100元起投</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="xm-pic">
+									<img src="img/yhq.png" />
+								</div>
+								<p>可用优惠劵</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="xm-pic">
+									<img src="img/ksh.png" />
+								</div>
+								<p>30天可赎回</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron">
+					
+					<div class="sxjh space">
+						<div class="sxjh-tit xm-sxtit">
+							<i><img src="img/s.svg"/></i>
+							<h3>省心计划（新手专享）</h3>
+						</div>
+						<div class="xm-sxjh cer">
+							<div class="xm-l">
+								<p><span>12</span>%+11.11%</p>
+							</div>
+							<div class="xm-c">
+								<p><span>12</span>个月</p>
+							</div>
+							<div class="xm-r">
+								<button class="btn-b">已投满</button>
+							</div>
+						</div>
+						<p class="cer btm-ts">双十一活动平台限时加息11.11%</p>
+					</div>
+					<div class="sxjh space">
+						<div class="sxjh-tit xm-sxtit">
+							<i><img src="img/s.svg"/></i>
+							<h3>省心计划（新手专享）</h3>
+						</div>
+						<div class="xm-sxjh cer">
+							<div class="xm-l">
+								<p><span>12</span>%+11.11%</p>
+							</div>
+							<div class="xm-c">
+								<p><span>12</span>个月</p>
+							</div>
+							<div class="xm-r">
+								<button class="btn-b">已投满</button>
+							</div>
+						</div>
+						<p class="cer btm-ts">双十一活动平台限时加息11.11%</p>
+					</div>
+					<div class="sxjh space">
+						<div class="sxjh-tit xm-sxtit">
+							<i><img src="img/s.svg"/></i>
+							<h3>省心计划（新手专享）</h3>
+						</div>
+						<div class="xm-sxjh cer">
+							<div class="xm-l">
+								<p><span>12</span>%+11.11%</p>
+							</div>
+							<div class="xm-c">
+								<p><span>12</span>个月</p>
+							</div>
+							<div class="xm-r">
+								<button class="btn-a">投资</button>
+							</div>
+						</div>
+						<p class="cer btm-ts">双十一活动平台限时加息11.11%</p>
+						<div class="sm-sx-btm cer">
+							<p>可投金额<span> 51.11 </span>万</p>
+						</div>
+					</div>
+					<div class="sxjh space">
+						<div class="sxjh-tit xm-sxtit">
+							<i><img src="img/s.svg"/></i>
+							<h3>省心计划（新手专享）</h3>
+						</div>
+						<div class="xm-sxjh cer">
+							<div class="xm-l">
+								<p><span>12</span>%+11.11%</p>
+							</div>
+							<div class="xm-c">
+								<p><span>12</span>个月</p>
+							</div>
+							<div class="xm-r">
+								<button class="btn-a">投资</button>
+							</div>
+						</div>
+						<p class="cer btm-ts">双十一活动平台限时加息11.11%</p>
+						<div class="sm-sx-btm cer">
+							<p>可投金额<span> 51.11 </span>万</p>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			function refreshDown() {
+				var html = "";
+				setTimeout(function() {
+					var oDiv = document.createElement('div');
+					oDiv.className = 'sxjh space';
+					html += `<div class="sxjh-tit xm-sxtit">
+								<i><img src="img/s.svg"/></i>
+								<h3>省心计划（新手专享）</h3>
+							</div>
+							<div class="xm-sxjh cer">
+								<div class="xm-l">
+									<p><span>12</span>%+11.11%</p>
+								</div>
+								<div class="xm-c">
+									<p><span>12</span>个月</p>
+								</div>
+								<div class="xm-r">
+									<button class="btn-b">认购</button>
+								</div>
+							</div>
+							<p class="cer btm-ts">双十一活动平台限时加息11.11%</p>`;
+					oDiv.innerHTML = html;
+					mui('.mui-table-view')[0].insertBefore(oDiv, mui('.mui-table-view')[0].firstChild)
+					mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+				}, 1000)
+			};
+
+			function refreshUp() {
+				var html = "";
+				setTimeout(function() {
+					var oDiv = document.createElement('div');
+					oDiv.className = 'sxjh space';
+					html += `<div class="sxjh-tit xm-sxtit">
+								<i><img src="img/s.svg"/></i>
+								<h3>省心计划I-201705169</h3>
+							</div>
+							<div class="xm-sxjh cer">
+								<div class="xm-l">
+									<p><span>12</span>%+11.11%</p>
+								</div>
+								<div class="xm-c">
+									<p><span>12</span>个月</p>
+								</div>
+								<div class="xm-r">
+									<button class="btn-a">认购</button>
+								</div>
+							</div>
+							<p class="cer btm-ts">双十一活动平台限时加息11.11%</p>`;
+					oDiv.innerHTML = html;
+					mui('.mui-table-view')[0].appendChild(oDiv, mui('.mui-table-view')[0].firstChild)
+					mui('#refreshContainer').pullRefresh().endPullupToRefresh();
+				}, 1000)
+			}
+			mui.init({
+				pullRefresh: {
+					container: "#refreshContainer", //下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+					down: {
+						contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+						contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+						contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+						callback: refreshDown //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+					},
+					up: {
+						contentrefresh: "正在加载...", //可选，正在加载状态时，上拉加载控件上显示的标题内容
+						contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+						callback: refreshUp //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+					}
+				}
+			});
+		</script>
+	</body>
+
+</html>

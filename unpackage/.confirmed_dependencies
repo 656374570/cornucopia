@@ -1,0 +1,189 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"sub1.html",
+			"sub2.html"
+		],
+		"refer": [
+			"sub4.html",
+			"sub3.html",
+			"sub2.html",
+			"sub1.html"
+		]
+	},
+	"sub1.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/lbc.jpg",
+			"css/index.css",
+			"img/lba.jpg",
+			"img/lbd.jpg",
+			"img/lbb.jpg",
+			"img/hundred.svg",
+			"img/xs.png",
+			"img/qd.png",
+			"img/s.svg",
+			"img/aqlt.png",
+			"img/xslb.png",
+			"img/z.svg",
+			"img/zxt.png",
+			"img/xxpl.png",
+			"img/lkzc_03.png",
+			"img/m.svg",
+			"img/question.svg",
+			"img/zr_03.jpg",
+			"img/qdt.png",
+			"img/main-foot_06.jpg",
+			"img/sz.png"
+		],
+		"refer": [
+			"tz.html"
+		]
+	},
+	"sub2.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/qtj.png",
+			"img/bxbz.png",
+			"img/ksh.png",
+			"img/yhq.png",
+			"img/rmb.png",
+			"css/index.css",
+			"img/s.svg"
+		],
+		"refer": [
+			"zq.html",
+			"tz.html"
+		]
+	},
+	"sub4.html": {
+		"resources": [
+			"img/yhqq.png",
+			"img/zcmx.png",
+			"img/zhsz.png",
+			"img/qdzx.png",
+			"img/dqtz.png",
+			"img/sys.png",
+			"img/hkrl.png",
+			"img/gd.png",
+			"img/txq.png",
+			"img/wdjf.png",
+			"img/images/wdbg.jpg",
+			"img/jyjl.png",
+			"img/yqhy.png",
+			"fonts/mui.ttf",
+			"img/gzwx.png",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"sys.html",
+			"grxx.html",
+			"tz.html",
+			"kfrx.html",
+			"positio.html"
+		]
+	},
+	"sub3.html": {
+		"resources": [
+			"img/zxdt.png",
+			"img/dvt_08.jpg",
+			"img/gzwx.png",
+			"img/images/lb-a.jpg",
+			"img/jlz_03.jpg",
+			"img/mtbd.png",
+			"img/jmy_06.jpg",
+			"img/images/lb-b.jpg",
+			"img/jkh.png",
+			"img/kfa.png",
+			"img/gywm.png",
+			"img/wdonline.jpg",
+			"img/kf.png",
+			"img/jnzq.png",
+			"img/fwgg.png",
+			"img/xs.png",
+			"img/lbb.jpg",
+			"img/aqlt.png",
+			"img/xslb.png",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"img/images/wdbg.jpg"
+		],
+		"refer": [
+			"kfrx.html",
+			"tz.html",
+			"lczx-cont.html"
+		]
+	},
+	"kfrx.html": {
+		"resources": [
+			"css/index.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"sys.html": {
+		"resources": [
+			"css/index.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"grxx.html": {
+		"resources": [
+			"css/index.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/images/f.jpg"
+		]
+	},
+	"zq.html": {
+		"resources": [
+			"css/index.css",
+			"js/mui.min.js",
+			"img/qtj.png",
+			"css/mui.min.css",
+			"img/s.svg",
+			"img/bxbz.png",
+			"img/ksh.png",
+			"img/yhq.png",
+			"img/rmb.png"
+		]
+	},
+	"tz.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"lczx-cont.html": {
+		"resources": [
+			"img/images/f.jpg",
+			"css/index.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"positio.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/index.css"
+		]
+	}
+}

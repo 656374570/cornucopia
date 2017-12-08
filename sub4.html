@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+
+	<body>
+		<header class="bck-wd">
+			<div class="had">
+				<a href="#" class="mui-icon mui-pull-left" id="sys"><img src="img/sys.png"/></a>
+				<h1 class="mui-title ttt">我的账户</h1>
+			</div>
+			<a href="#">
+				<div class="h-assets">
+					<p>现有资产(元)</p>
+					<span>0.00</span>
+				</div>
+				<div class="surplus">
+					<div class="l-surplus">
+						<span>0.00</span>
+						<p>可用余额(元)</p>
+					</div>
+					<div class="r-surplus">
+						<span>0.00</span>
+						<p>净赚取(元)</p>
+					</div>
+				</div>
+			</a>
+		</header>
+		<div class="mui-content">
+		    <div class="mui-slider ban-cont">
+		      <div class="mui-slider-group">
+		        <!--第一个内容区容器-->
+		        <div class="mui-slider-item">
+		        	<div class="fx-list">
+		          	<ul>
+						<li>
+							<a href="#" title="签到中心">
+								<div class="list-pic">
+									<div class="sy-pic">
+										<img src="img/qdzx.png" alt="" />
+									</div>
+									<p>签到中心</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="还款日历">
+								<div class="list-pic">
+									<div class="sy-pic">
+										<img src="img/hkrl.png" alt="" />
+									</div>
+									<p>还款日历</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="邀请好友">
+								<div class="list-pic">
+									<div class="sy-pic">
+										<img src="img/yqhy.png" alt="" />
+									</div>
+									<p>邀请好友</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="优惠券">
+								<div class="list-pic">
+									<div class="sy-pic">
+										<img src="img/yhqq.png" alt="" />
+									</div>
+									<p>优惠券</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					</div>
+		        </div>
+		        <!--第二个内容区-->
+		        <div class="mui-slider-item">
+		          	<div class="fx-list">
+		          	<ul>
+						<li>
+							<a href="#" title="提现券">
+								<div class="list-pic">
+									<div class="sy-pic">
+										<img src="img/txq.png" alt="" />
+									</div>
+									<p>提现券</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="list-pic">
+									<div class="sy-pic">
+										<img src="img/gzwx.png" alt="" />
+									</div>
+									<p>敬请期待</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							
+						</li>
+					</ul>
+					</div>
+		        </div>
+		      </div>
+		      
+			    <div class="mui-slider-indicator">
+				    <div class="mui-indicator mui-active"></div>
+				    <div class="mui-indicator"></div>
+				</div>
+		    </div>
+		    <div class="list">
+		    	<ul class="mui-table-view">
+		    	    <li class="mui-table-view-cell">
+		    	        <a href="#" class="mui-navigate-right"  id="grxx">
+		    	        	<i><img src="img/jyjl.png"/></i>我的信息
+		    	        </a>
+		    	    </li>
+			        <li class="mui-table-view-cell">
+		    	        <a class="mui-navigate-right" id="posi">
+		    	            <i><img src="img/wdjf.png" alt="" /></i>定位
+	    	            </a>
+			        </li>
+			        <li class="mui-table-view-cell">
+		    	        <a class="mui-navigate-right">
+		    	            <i><img src="img/gd.png" alt="" /></i>更多
+	    	            </a>
+			        </li>
+		    	</ul>
+		    </div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady(function(){
+				mui("#sys")[0].addEventListener('tap',function(){
+					mui.openWindow('sys.html','sys.html')
+				})
+				mui('#grxx')[0].addEventListener('tap',function(){
+					mui.openWindow('grxx.html','grxx.html')
+				})
+				mui('.fx-list').on('tap','a',function(){
+					var title = this.getAttribute('title')
+					mui.openWindow({
+						url: "tz.html",
+						id: "tz.html",
+						styles:{
+							top:'0px',
+							bottom:'0px'
+						},
+						extras:{
+							titles:title
+						}
+					})
+				})
+				mui('#posi')[0].addEventListener('tap',function(){
+					mui.openWindow('positio.html', 'positio.html')
+				})
+			})
+		</script>
+	</body>
+
+</html>

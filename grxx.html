@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">个人信息</h1>
+			<a href="#" id="xj">相机</a>
+		</header>
+		<div class="mui-content">
+		    <ul class="mui-table-view">
+			    <li class="mui-table-view-cell">头像
+			        <span class="mui-badge mui-badge-noe" id="picxa"><a href="#" id="xzp"></a></span>
+			    </li>
+			    <li class="mui-table-view-cell">名称
+			        <span class="mui-badge mui-badge-noe"><a href="#" id="xx-name">忘却红城</a></span>
+			    </li>
+			    <li class="mui-table-view-cell">HBuilder账号
+			        <span class="mui-badge mui-badge-noe">zw656374570</span>
+			    </li>
+			</ul>
+			<div id="inp">
+				<div id="bg-b">
+					
+				</div>
+				<div class="bg-c">
+					<input type="text" name="" id="txt" placeholder="请输入新名称" />
+					<button id="ok">确定</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			var xName = document.querySelector("#xx-name");
+			var inp = document.querySelector("#inp");
+			var bgb = document.querySelector("#bg-b");
+			var oKbtn = document.querySelector("#ok");
+			var inpTxt = document.querySelector("#txt")
+			xName.onclick = function(){
+				inp.style.display = "block"
+			}
+			bgb.onclick = function(){
+				inp.style.display = 'none'
+			}
+			oKbtn.onclick = function(){
+				xName.innerHTML = inpTxt.value;
+				inp.style.display = 'none'
+				inpTxt.value = ""
+			}
+			mui.plusReady(function(){
+				function setStorage() {
+					plus.storage.setItem("test","test with hbuilder!");
+				}
+				var Img = document.createElement("img");
+				Img.src = 'img/images/f.jpg';
+				mui('#xzp')[0].appendChild(Img)
+				mui('#xj')[0].addEventListener('tap', function() {
+					var cm = plus.camera.getCamera(1);
+					cm.captureImage(function(path) {
+						Img.src = "file://" + plus.io.convertLocalFileSystemURL(path);
+					});
+				})
+				
+				mui('#xzp')[0].addEventListener('tap',function(){
+					plus.gallery.pick( function(path){
+						Img.src = path;
+					});
+//					var foo = plus.storage.getItem(key)
+//					alert(foo)
+				})
+			})
+		</script>
+	</body>
+
+</html>

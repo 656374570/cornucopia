@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">地理定位</h1>
+		</header>
+		<div class="mui-content">
+			<p class="pin-country">您当前的位置是：<span id="information"></span></p>
+			<button id="btns">获取位置</button>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady(function(){
+				mui('#btns')[0].addEventListener('tap',function(){
+					plus.geolocation.watchPosition(function(data){
+						var html = data.address.city + data.address.district;
+						mui('#information')[0].innerHTML = html;
+					});
+				},function(){
+					alert('定位失败')
+				})
+			})
+//			 {"coordsType":"gcj02","address":{"country":"中国","province":"北京市","city":"北京市","district":"大兴区","street":"华佗路","poiName":"北京教育学院附属大兴实验小学(融汇校区)","cityCode":"010"},"addresses":"北京市大兴区新源大街靠近北京教育学院附属大兴实验小学(融汇校区)","coords":{"latitude":39.675129,"longitude":116.319725,"accuracy":550,"altitude":0,"heading":null,"speed":0,"altitudeAccuracy":0},"timestamp":1510223302692}
+		</script>
+	</body>
+
+</html>
